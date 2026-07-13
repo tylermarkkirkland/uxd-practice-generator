@@ -1,0 +1,44 @@
+.completion-form {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.completion-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.completion-form__label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.completion-form__save {
+  align-self: flex-start;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: #fff;
+  transition: opacity 0.2s;
+}
+
+.completion-form__save:hover {
+  opacity: 0.85;
+}
+
+.completion-form--compact {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}

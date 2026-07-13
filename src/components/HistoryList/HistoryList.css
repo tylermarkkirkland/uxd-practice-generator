@@ -1,0 +1,164 @@
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 680px;
+}
+
+.history-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.history-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.history-item__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.history-item__header:hover {
+  background: var(--bg-hover);
+}
+
+.history-item__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.history-item__date {
+  font-size: 13px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  width: 50px;
+}
+
+.history-item__title {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.history-item__right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.history-item__status {
+  font-size: 12px;
+  color: var(--success);
+  background: var(--success-dim);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.history-item__chevron {
+  color: var(--text-muted);
+  font-size: 18px;
+  width: 20px;
+  text-align: center;
+}
+
+.history-item__detail {
+  padding: 16px 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--bg-secondary);
+}
+
+.history-item__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.history-item__label {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.history-item__link-value {
+  font-size: 14px;
+  color: var(--accent);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.history-item__link-value:hover {
+  text-decoration: underline;
+}
+
+.history-item__reflection-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.history-item__empty {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.history-item__actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.history-item__edit {
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+
+.history-item__edit:hover {
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+.history-item__detail .completion-form {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+/* Import exercise card styles for modal */
+@import '../ExerciseCard/ExerciseCard.css';
+
+/* Override for modal context */
+.history-exercise-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  max-width: 680px;
+  margin: 0 auto;
+}

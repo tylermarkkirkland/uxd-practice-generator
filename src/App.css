@@ -1,0 +1,17 @@
+.app {
+  min-height: 100vh;
+  padding: 0 24px 60px;
+}
+
+.app__container {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.app__today {
+  margin-top: 28px;
+}
+
+.app__history {
+  margin-top: 28px;
+}
