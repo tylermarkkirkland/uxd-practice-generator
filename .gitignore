@@ -3,3 +3,6 @@ dist
 dist-ssr
 *.local
 .DS_Store
+
+# My practice log and reflections stay on this machine
+history.json
